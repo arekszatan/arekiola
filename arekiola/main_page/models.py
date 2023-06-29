@@ -1,12 +1,8 @@
 from django.db import models
 
-
-class Question(models.Model):
-    question_text = models.CharField(max_length=200)
-    pub_date = models.DateTimeField("date published")
-
-
-class Choice(models.Model):
-    question = models.ForeignKey(Question, on_delete=models.CASCADE)
-    choice_text = models.CharField(max_length=200)
-    votes = models.IntegerField(default=0)
+class ShoppingList(models.Model):
+    auto_increment_id = models.AutoField(primary_key=True)
+    data_time = models.DateTimeField(auto_now_add=True)
+    things_to_buy = models.CharField(max_length=300)
+    checked = models.BooleanField()
+    finished = models.BooleanField()
