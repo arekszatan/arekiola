@@ -1,15 +1,15 @@
 from django.urls import path
 
 from .views import (
-    # TodoListApiView,
-    index
-    # RemoveRow,
-    # UpdateRow
+    index,
+    WalletListDbView,
+    WalletListAddDbView,
+    WalletListRemoveAllDbView
 )
 
 urlpatterns = [
-    # path('api/', TodoListApiView.as_view()),
-    # path('api/remove', RemoveRow.as_view()),
-    # path('api/update', UpdateRow.as_view()),
+    path('api/wallet/List/', WalletListDbView.as_view()),
     path('wallet/', index, name='index'),
+    path('api/wallet/list/add/', WalletListAddDbView.as_view()),
+    path('api/wallet/list/remove/', WalletListRemoveAllDbView.as_view())
 ]

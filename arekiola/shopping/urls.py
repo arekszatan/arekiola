@@ -13,5 +13,4 @@ urlpatterns = [
     path('api/update', UpdateRow.as_view()),
     path('', index, name='index'),
     path('shopping/', index, name='index'),
-    path('test/', index, name='index'),
 ]
