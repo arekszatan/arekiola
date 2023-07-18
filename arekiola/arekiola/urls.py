@@ -9,4 +9,5 @@ urlpatterns = [
     path('', include('shopping.urls')),
     path('', include('wallet.urls')),
     path('', include('settings.urls')),
+    path('', include('shoppingOther.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

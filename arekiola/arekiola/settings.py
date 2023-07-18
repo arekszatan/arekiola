@@ -33,7 +33,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'shopping',
     'wallet',
-    'settings'
+    'settings',
+    'shoppingOther'
 ]
 
 MIDDLEWARE = [
