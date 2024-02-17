@@ -100,7 +100,7 @@ USE_TZ = True
 
 MEDIA_URL = '/media/'
 STATIC_URL = '/static/'
-#MEDIA_ROOT = os.path.join(str(BASE_DIR), 'build/media')
+MEDIA_ROOT = os.path.join(str(BASE_DIR), 'build')
 if DEBUG:
     STATICFILES_DIRS = [
         os.path.join(str(BASE_DIR), 'build/static')
